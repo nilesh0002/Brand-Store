@@ -13,7 +13,10 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
+<<<<<<< HEAD
     "moduleResolution": "node",
+=======
+>>>>>>> 80ca2a8ddaad0ef73fdfbd19f19cc5ed6f6666c7
     "ignoreDeprecations": "6.0"
   },
   "include": ["src/**/*"],
