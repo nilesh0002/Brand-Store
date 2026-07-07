@@ -126,7 +126,7 @@ const orderSchema = new Schema<IOrder>(
 );
 
 // Generate order number before saving
-orderSchema.pre('save', function (next) {
+orderSchema.pre('save', function (this: any, next: any) {
   if (!this.orderNumber) {
     this.orderNumber = `BS-${Date.now()}-${Math.random().toString(36).substring(2, 7).toUpperCase()}`;
   }

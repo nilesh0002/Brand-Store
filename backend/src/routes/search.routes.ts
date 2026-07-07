@@ -17,7 +17,7 @@ router.get('/', async (req, res, next) => {
         { tags: { $regex: q, $options: 'i' } },
       ],
       status: 'active',
-    })
+    } as any)
       .populate('brand', 'name')
       .select('name slug images price brand category')
       .limit(Number(limit));

@@ -158,9 +158,9 @@ productSchema.virtual('discountPercentage').get(function () {
 });
 
 // Pre-save: calculate totalStock from sizes
-productSchema.pre('save', function (next) {
+productSchema.pre('save', function (this: any, next: any) {
   if (this.sizes && this.sizes.length > 0) {
-    this.totalStock = this.sizes.reduce((total, size) => total + size.stock, 0);
+    this.totalStock = this.sizes.reduce((total: number, size: any) => total + size.stock, 0);
   }
   next();
 });
