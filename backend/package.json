@@ -17,6 +17,13 @@
   "author": "Brand Store",
   "license": "MIT",
   "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/multer": "^2.2.0",
     "bcryptjs": "^3.0.3",
     "cloudinary": "^2.10.0",
     "cookie-parser": "^1.4.7",
@@ -30,17 +37,9 @@
     "morgan": "^1.11.0",
     "multer": "^2.2.0",
     "razorpay": "^2.9.6",
-    "stripe": "^22.3.0"
-  },
-  "devDependencies": {
-    "@types/bcryptjs": "^2.4.6",
-    "@types/cookie-parser": "^1.4.10",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.6",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/morgan": "^1.9.10",
-    "@types/multer": "^2.2.0",
+    "stripe": "^22.3.0",
     "tsx": "^4.22.5",
     "typescript": "^6.0.3"
-  }
+  },
+  "devDependencies": {}
 }
