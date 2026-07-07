@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   // Use webpack instead of turbopack to avoid unicode path issues
   // The path contains Japanese characters (ドキュメント) which cause Turbopack to crash
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
