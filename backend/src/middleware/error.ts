@@ -29,7 +29,7 @@ export const errorHandler = (
   console.error('ERROR 💥:', err);
 
   let statusCode = 500;
-  let message = 'Internal Server Error';
+  let message = err.message || 'Internal Server Error';
 
   if (err instanceof AppError) {
     statusCode = err.statusCode;
